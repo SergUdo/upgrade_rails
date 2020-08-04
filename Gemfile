@@ -18,7 +18,6 @@ gem 'dotenv-rails', '~> 2.7', require: 'dotenv/rails-now'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development do
-  gem 'web-console', '~> 4.0', '>= 4.0.4'
   gem 'listen', '~> 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'

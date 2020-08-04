@@ -19,7 +19,6 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development do
   gem 'listen', '~> 3.2'
-  gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'capistrano'
   gem 'capistrano-rails', '~> 1.6', '>= 1.6.1'
@@ -66,7 +65,11 @@ group :development, :test do
   #Testing
   gem 'rspec-rails', '~> 4.0', '>= 4.0.1'
   gem 'rspec-its', '~> 1.3'
-  gem 'factory_bot', '~> 6.1'
+  # gem 'rspec-rails', '~> 3.2.1'
+  # gem 'rspec-its', '~> 1.2.0'
+
+  gem 'factory_girl_rails', '~> 4.5.0'
+  # gem 'factory_bot', '~> 6.1'
 end
 
 group :test do

@@ -16,7 +16,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'sdoc', '~> 1.1', group: :doc
 gem 'dotenv-rails', '~> 2.7', require: 'dotenv/rails-now'
 gem 'bootsnap', '>= 1.4.2', require: false
-
+gem 'grape'
 gem 'oauth2', '~> 1.4', '>= 1.4.4'
 gem 'hashie', '~> 4.1'
 gem 'devise', '~> 4.7', '>= 4.7.2'
@@ -43,7 +43,7 @@ gem 'backup', '~> 5.0.0.beta.3', require: false
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'font-awesome-sass', '~> 5.13'
 
-gem "rubykassa"
+gem 'rubykassa'
 gem 'therubyracer', '~> 0.12.3'
 gem 'less-rails', '~> 5.0'
 gem 'omniauth', '~> 1.9', '>= 1.9.1'
@@ -59,6 +59,7 @@ group :development do
   gem 'capistrano-rails', '~> 1.6', '>= 1.6.1'
   gem 'capistrano-bundler', '~> 2.0', '>= 2.0.1'
   gem 'capistrano-rbenv', '~> 2.2'
+  # gem 'capistrano3-puma', github: "seuros/capistrano-puma"
 end
 
 group :development, :test do

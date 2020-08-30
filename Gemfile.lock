@@ -189,7 +189,28 @@ GEM
       request_store (>= 1.0)
     dropbox-sdk (1.6.5)
       json
+    dry-configurable (0.11.6)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.4, >= 0.4.7)
+      dry-equalizer (~> 0.2)
+    dry-container (0.7.2)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1, >= 0.1.3)
+    dry-core (0.4.9)
+      concurrent-ruby (~> 1.0)
+    dry-equalizer (0.3.0)
     dry-inflector (0.2.0)
+    dry-logic (1.0.7)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.2)
+      dry-equalizer (~> 0.2)
+    dry-types (1.4.0)
+      concurrent-ruby (~> 1.0)
+      dry-container (~> 0.3)
+      dry-core (~> 0.4, >= 0.4.4)
+      dry-equalizer (~> 0.3)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-logic (~> 1.0, >= 1.0.2)
     equalizer (0.0.11)
     erubi (1.9.0)
     excon (0.76.0)
@@ -378,6 +399,13 @@ GEM
       activerecord (>= 4.0.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    grape (1.4.0)
+      activesupport
+      builder
+      dry-types (>= 1.1)
+      mustermann-grape (~> 1.0.0)
+      rack (>= 1.3.0)
+      rack-accept
     has_scope (0.7.2)
       actionpack (>= 4.1)
       activesupport (>= 4.1)
@@ -469,6 +497,10 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    mustermann-grape (1.0.1)
+      mustermann (>= 1.0.0)
     naught (1.1.0)
     net-http-digest_auth (1.4.1)
     net-http-persistent (4.0.0)
@@ -527,6 +559,8 @@ GEM
       mime-types (~> 3.1)
       rest-client (~> 2.0)
     rack (2.2.3)
+    rack-accept (0.4.5)
+      rack (>= 0.4)
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
@@ -607,6 +641,7 @@ GEM
       rspec-mocks (~> 3.9)
       rspec-support (~> 3.9)
     rspec-support (3.9.3)
+    ruby2_keywords (0.0.2)
     rubykassa (0.4.2)
       multi_xml
       rails (>= 3.2.18)
@@ -733,6 +768,7 @@ DEPENDENCIES
   formtastic
   formtastic-bootstrap
   friendly_id (~> 5.3)
+  grape
   has_scope (~> 0.7.2)
   hashie (~> 4.1)
   jbuilder (~> 2.7)
